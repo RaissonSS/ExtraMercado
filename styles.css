@@ -131,13 +131,72 @@
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     background-color: red;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+}
+
+@media (min-width: 2000px) {
+    .headerTitle {
+        font-size: 50px;
+    }
+    .encomenda, .contato {
+        font-size: 35px;
+    }
+    .side-content-img {
+        width: 350px;
+        height: 250px;
+    }
+    .side-content-item p {
+        font-size: 30px;
+    }
+    .content-img {
+        width: 450px;
+        height: 300px;
+    }
+    .content {
+        padding: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-item p {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .headerTitle {
+        font-size: 40px;
+    }
+    .encomenda, .contato {
+        font-size: 30px;
+    }
+    .side-content {
+        gap: 70px;
+    }
+    .side-content-img {
+        width: 350px;
+        height: 250px;
+    }
+    .side-content-item p {
+        font-size: 30px;
+    }
+    .content-img {
+        width: 450px;
+        height: 300px;
+    }
+    .content {
+        padding: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-item p {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 1300px) {
