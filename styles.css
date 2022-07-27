@@ -102,6 +102,8 @@
 }
 .item4 {
     grid-area: item4;
+    display: flex;
+    flex-direction: column;
 }
 
 .side-content {
@@ -218,10 +220,10 @@
     .content {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 30px;
     }
     .side-content {
-        gap: 100px;
+        gap: 50px;
     }
 }
 
@@ -250,6 +252,14 @@
     }
 }
 
+@media (max-width: 750px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
 @media (max-width: 650px) {
     .header {
         display: flex;
@@ -266,6 +276,9 @@
     .content-img {
         width: 250px;
         height: 150px;
+    }
+    .footer .logo-carrinho{
+        display: none;
     }
 }
 
